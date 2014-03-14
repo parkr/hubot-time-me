@@ -1,19 +1,25 @@
 {
   "name": "hubot-time-me",
-  "description": "A hubot plugin which allows you to fetch info about where your teammates are.",
-  "version": "0.1.0",
+  "description": "Ask hubot location-based question about users, such as their local time.",
+  "version": "1.0.0",
   "author": "Parker Moore <parkrmoore@gmail.com>",
   "license": "MIT",
   "keywords": [
     "hubot",
-    "hubot-scripts"
+    "hubot-scripts",
+    "time",
+    "time-me",
+    "location",
+    "locale",
+    "latitude",
+    "longitude"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-example.git"
+    "url": "git://github.com/parkr/hubot-time-me.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-example/issues"
+    "url": "https://github.com/parkr/hubot-time-me/issues"
   },
   "dependencies": {
     "coffee-script": "~1.6",
