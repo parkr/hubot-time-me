@@ -1,0 +1,36 @@
+{
+  "name": "hubot-time-me",
+  "description": "A hubot plugin which allows you to fetch info about where your teammates are.",
+  "version": "0.1.0",
+  "author": "Parker Moore <parkrmoore@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-example/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "node-geocoder": "^1.4.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "grunt test"
+  }
+}
