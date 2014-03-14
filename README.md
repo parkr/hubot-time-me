@@ -1,8 +1,11 @@
 # Hubot: hubot-time-me
 
-A hubot plugin which allows you to fetch info about where your teammates are.
+Location-aware queries about users for hubot.
 
-See [`src/hello-world.coffee`](src/hello-world.coffee) for full documentation.
+Where is parkr? What time is it at parkr's location? Hey Hubot, parkr's now
+in a new location.
+
+See [`src/time-me.coffee`](src/time-me.coffee) for full documentation.
 
 ## Installation
 
@@ -23,6 +26,10 @@ Run `npm install`
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> hubot parkr is in Ithaca, NY
+hubot>> Ok, updated parkr's location to 'Ithaca, NY'
+user1>> hubot where is parkr
+hubot>> parkr is in Ithaca, NY.
+user1>> hubot time me parkr
+hubot>> It's currently Thursday, March 13 at 18:39 PM. in Ithaca, NY.
 ```
