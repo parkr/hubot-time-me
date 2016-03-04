@@ -23,6 +23,8 @@ Add **hubot-time-me** to your `external-scripts.json`:
 
 Run `npm install`
 
+Go to https://timezonedb.com and register for an account. You should receive an API key that you can then tell Hubot about. Just set the environment variable `HUBOT_TIMEZONEDB_API_KEY` to the API key provided :zap:
+
 ## Sample Interaction
 
 ```
