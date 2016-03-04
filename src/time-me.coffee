@@ -81,11 +81,14 @@ relativeToNoon = (hours) ->
     "PM"
   else
     "AM"
+    
+padTimeDigits = (number) ->
+  ("00" + number).substr(-2,2)
 
 formattedUnixTime = (timestamp) ->
   date = new Date(parseInt(timestamp) * 1000)
   console.log date
-  "#{dayNames[date.getUTCDay()]}, #{monthNames[date.getUTCMonth()]} #{date.getUTCDate()} at #{date.getUTCHours()}:#{date.getUTCMinutes()} #{relativeToNoon(date.getUTCHours())}."
+  "#{dayNames[date.getUTCDay()]}, #{monthNames[date.getUTCMonth()]} #{date.getUTCDate()} at #{date.getUTCHours()}:#{padTimeDigits(date.getUTCMinutes())} #{relativeToNoon(date.getUTCHours())}."
 
 timeAtLatitudeAndLongitude = (robot, location, cb) ->
   robot.http("http://api.timezonedb.com/").query
