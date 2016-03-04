@@ -17,7 +17,7 @@
 #   parkr
 
 geocoder = require('node-geocoder').getGeocoder('google', 'http', {})
-timezonedbKey = process.env["HUBOT_TIMEZONEDB_API_KEY"]
+timezonedbKey = process.env.HUBOT_TIMEZONEDB_API_KEY
 
 unless timezonedbKey?
   console.log "Whoops, can't use /time me, as HUBOT_TIMEZONEDB_API_KEY isn't set."
